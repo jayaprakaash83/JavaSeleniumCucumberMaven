@@ -79,6 +79,11 @@
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.22.1</version>
+					<configuration>
+						<includes>
+							<excludes>**/*Runner*.java</excludes>
+						</includes>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
